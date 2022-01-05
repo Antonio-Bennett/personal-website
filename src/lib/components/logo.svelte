@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let height: string, width: string;
+    export let styles: string;
 </script>
 
 <svg
@@ -13,7 +13,7 @@
     height="374.999991"
     preserveAspectRatio="xMidYMid meet"
     version="1.0"
-    class="{height} {width}"
+    class={styles}
     ><defs
         ><clipPath id="clip-0"
             ><path
