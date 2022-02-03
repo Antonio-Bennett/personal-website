@@ -5,10 +5,9 @@
 
 <header>
     <nav
-        class="flex my-4 mx-auto px-24 justify-between items-center md:flex-row">
+        class="flex my-4 px-8 md:px-24 justify-between items-center md:flex-row">
         <div class="flex gap-2 items-center">
-            <a href="/"><Logo styles="h-auto w-20" /></a>
-            <h3>Antonio</h3>
+            <a href="/"><Logo styles="h-auto w-16" /></a>
         </div>
         <div class="md:hidden">
             <MenuIcon styles="h-8 w-8" />

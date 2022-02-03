@@ -2,7 +2,11 @@ const config = {
     content: ['./src/**/*.{html,js,svelte,ts}'],
 
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                mainDark: '#1e3851',
+            },
+        },
     },
 
     plugins: [],
