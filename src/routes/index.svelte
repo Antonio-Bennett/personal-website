@@ -1,6 +1,7 @@
 <script lang="ts">
     // import GraphicDark from '$lib/components/graphic_dark.svelte';
     import GraphicLight from '$lib/components/graphic_light.svelte';
+    import ProjectList from '$lib/components/project_list.svelte';
 
     let projects = [
         {
@@ -27,11 +28,11 @@
 <div class="grid md:grid-cols-3 m-auto px-8 md:px-24">
     <section
         class="flex flex-col items-center justify-center gap-2 md:items-start my-3">
-        <h1 class="text-3xl font-semibold font-serif text-mainDark mt-6">
+        <h1 class="text-3xl font-semibold font-sans text-mainDark mt-6">
             HEY! I'M ANTONIO
         </h1>
         <h2
-            class="text-lg font-normal font-serif text-gray-400 md:text-2xl md:font-medium">
+            class="text-lg font-normal font-sans text-gray-400 md:text-2xl md:font-medium">
             A Web Developer & Tech Enthusiast
         </h2>
         <a
@@ -56,31 +57,17 @@
     <span class="col-span-2">
         <GraphicLight />
     </span>
-    <section class="flex flex-col items-center my-8">
-        <h2 class="text-3xl font-semibold font-serif mb-10 text-mainDark">
+    <section class="flex flex-col items-center my-8 md:col-span-3">
+        <h2 class="text-3xl font-semibold font-sans mb-10 text-mainDark">
             Projects
         </h2>
-        <div class="grid grid-cols-1 w-full gap-10">
-            {#each projects as project (project.id)}
-                <div
-                    class="border border-gray-100 overflow-hidden rounded-2xl shadow-md shadow-gray-300">
-                    <span>
-                        <img
-                            src={project.img}
-                            alt=""
-                            class="w-full h-auto object-contain" />
-                    </span>
-                    <div class="flex flex-col items-center gap-2 p-4">
-                        <p
-                            class="text-xl font-semibold font-serif text-mainDark">
-                            {project.title}
-                        </p>
-                        <p class="text-[#1e3851] font-medium">
-                            {project.category}
-                        </p>
-                    </div>
-                </div>
-            {/each}
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-10">
+            <ProjectList {projects} />
         </div>
+        <a
+            href="_"
+            class="text-white text-xl font-semibold font-sans rounded-lg bg-[#6366f1] mt-14 mb-16 py-3 px-6 shadow-md shadow-slate-300"
+            ><button>More Projects</button></a>
     </section>
 </div>
