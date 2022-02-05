@@ -5,5 +5,7 @@
 </script>
 
 <Header />
-<slot />
+<main class="px-8 md:px-24">
+    <slot />
+</main>
 <Footer />

@@ -1,10 +1,19 @@
+<script lang="ts">
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText('The_Antonio#8891').then(
+            () => alert('Discord ID copied to clipboard'),
+            () => alert('Could not copy to clipboard')
+        );
+    };
+</script>
+
 <footer
     class="grid grid-flow-row gap-5 justify-center border-t-2 border-t-gray-100 pt-20">
     <span class="font-bold font-sans text-3xl mx-auto text-mainDark"
         ><h1>Follow Me</h1></span>
     <div class="flex justify-around">
         <div class="bg-gray-100 rounded-lg p-3">
-            <a href="_">
+            <a href="https://github.com/Antonio-Bennett" target="blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -29,7 +38,7 @@
             </a>
         </div>
         <div class="bg-gray-100 rounded-lg p-3">
-            <a href="_">
+            <a href="https://twitter.com/Th3_Antonio" target="blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -46,7 +55,7 @@
             </a>
         </div>
         <div class="bg-gray-100 rounded-lg p-3">
-            <a href="_">
+            <button on:click={copyToClipboard}>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -60,10 +69,12 @@
                     ><path
                         d="M108 144a12 12 0 1 1-12-12a12 12 0 0 1 12 12zm52-12a12 12 0 1 0 12 12a12 12 0 0 0-12-12zm82.4 54.5c-16.6 14.4-38.9 25.4-64.4 31.6a17.4 17.4 0 0 1-3.9.5a15.8 15.8 0 0 1-14.2-8.9l-9.5-19a193.6 193.6 0 0 1-44.8 0l-9.5 19a15.8 15.8 0 0 1-14.2 8.9a17.4 17.4 0 0 1-3.9-.5c-25.5-6.2-47.8-17.2-64.4-31.6a16 16 0 0 1-4.9-16.7l34-113.2a15.6 15.6 0 0 1 9.2-10.2a172 172 0 0 1 31-9.6a15.9 15.9 0 0 1 18.6 10.5l6 17.8a191.6 191.6 0 0 1 41 0l6-17.8a15.9 15.9 0 0 1 18.6-10.5a172 172 0 0 1 31 9.6a15.6 15.6 0 0 1 9.2 10.2l34 113.2a16 16 0 0 1-4.9 16.7zm-10.5-12L198 61.2a160.8 160.8 0 0 0-28.3-8.8l-5.1 15a163.4 163.4 0 0 1 19.5 5a8 8 0 0 1-5 15.2c-15.3-5-33-7.6-51.1-7.6s-35.8 2.6-51.1 7.6a7.3 7.3 0 0 1-2.5.4a8 8 0 0 1-2.5-15.6a163.4 163.4 0 0 1 19.5-5l-5-15A167.7 167.7 0 0 0 58 61.1L24 174.4c14.7 12.8 34.7 22.5 57.8 28.2l7.2-14.5a152.9 152.9 0 0 1-17.1-4.5a8 8 0 1 1 5-15.2c15.3 5 33 7.6 51.1 7.6s35.8-2.6 51.1-7.6a8 8 0 0 1 5 15.2a152.9 152.9 0 0 1-17.1 4.5l7.2 14.5c23.1-5.7 43.1-15.4 57.7-28.1z"
                         fill="currentColor" /></svg>
-            </a>
+            </button>
         </div>
         <div class="bg-gray-100 rounded-lg p-3">
-            <a href="_">
+            <a
+                href="https://www.instagram.com/the_a.n.t.o.n.i.o/"
+                target="blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -80,8 +91,7 @@
             </a>
         </div>
     </div>
-    <p
-        class="flex font-sans text-lg items-center gap-1 justify-around mt-8 mb-4">
+    <p class="flex font-sans text-lg items-center gap-1 justify-around mt-8">
         <span
             ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,5 +108,26 @@
                     fill="currentColor" /></svg
             ></span>
         2022. Developed by Antonio Bennett
+    </p>
+    <p class="flex font-sans text-lg items-center gap-1 mx-auto">
+        Made with ❤️ using <a href="https://svelte.dev" target="blank"
+            ><span
+                ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    aria-hidden="true"
+                    role="img"
+                    class="iconify iconify--vscode-icons"
+                    width="20"
+                    height="20"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 32 32"
+                    ><path
+                        d="M26.47 5.7a8.973 8.973 0 0 0-11.793-2.454L7.96 7.4a7.461 7.461 0 0 0-3.481 5.009a7.686 7.686 0 0 0 .8 5.058a7.358 7.358 0 0 0-1.151 2.8a7.789 7.789 0 0 0 1.4 6.028a8.977 8.977 0 0 0 11.794 2.458L24.04 24.6a7.468 7.468 0 0 0 3.481-5.009a7.673 7.673 0 0 0-.8-5.062a7.348 7.348 0 0 0 1.152-2.8A7.785 7.785 0 0 0 26.47 5.7"
+                        fill="#ff3e00" /><path
+                        d="M14.022 26.64A5.413 5.413 0 0 1 8.3 24.581a4.678 4.678 0 0 1-.848-3.625a4.307 4.307 0 0 1 .159-.61l.127-.375l.344.238a8.76 8.76 0 0 0 2.628 1.274l.245.073l-.025.237a1.441 1.441 0 0 0 .271.968a1.63 1.63 0 0 0 1.743.636a1.512 1.512 0 0 0 .411-.175l6.7-4.154a1.366 1.366 0 0 0 .633-.909a1.407 1.407 0 0 0-.244-1.091a1.634 1.634 0 0 0-1.726-.622a1.509 1.509 0 0 0-.413.176l-2.572 1.584a4.934 4.934 0 0 1-1.364.582a5.415 5.415 0 0 1-5.727-2.06a4.678 4.678 0 0 1-.831-3.628A4.507 4.507 0 0 1 9.9 10.09l6.708-4.154a4.932 4.932 0 0 1 1.364-.581A5.413 5.413 0 0 1 23.7 7.414a4.679 4.679 0 0 1 .848 3.625a4.272 4.272 0 0 1-.159.61l-.127.375l-.344-.237a8.713 8.713 0 0 0-2.628-1.274l-.245-.074l.025-.237a1.438 1.438 0 0 0-.272-.968a1.629 1.629 0 0 0-1.725-.622a1.484 1.484 0 0 0-.411.176l-6.722 4.14a1.353 1.353 0 0 0-.631.908a1.394 1.394 0 0 0 .244 1.092a1.634 1.634 0 0 0 1.726.621a1.538 1.538 0 0 0 .413-.175l2.562-1.585a4.9 4.9 0 0 1 1.364-.581a5.417 5.417 0 0 1 5.728 2.059a4.681 4.681 0 0 1 .843 3.625a4.5 4.5 0 0 1-2.089 3.013l-6.707 4.154a4.9 4.9 0 0 1-1.364.581"
+                        fill="#fff" /></svg
+                ></span
+            ></a>
     </p>
 </footer>

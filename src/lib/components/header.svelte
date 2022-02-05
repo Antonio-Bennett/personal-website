@@ -17,7 +17,7 @@
             <MenuIcon styles="h-8 w-8" />
         </div>
         <ul class="hidden md:flex gap-5 text-lg font-sans text-gray-700">
-            <li><a href="/about">About</a></li>
+            <li><a href="/about">About Me</a></li>
             <li><a href="/projects">Projects</a></li>
             <li><a href="/contact">Contact</a></li>
         </ul>

@@ -25,7 +25,7 @@
     ];
 </script>
 
-<div class="grid md:grid-cols-3 m-auto px-8 md:px-24">
+<div class="grid md:grid-cols-3">
     <section
         class="flex flex-col items-center justify-center gap-2 md:items-start my-3">
         <h1 class="text-3xl font-semibold font-sans text-mainDark mt-6">
@@ -33,7 +33,7 @@
         </h1>
         <h2
             class="text-lg font-normal font-sans text-gray-400 md:text-2xl md:font-medium">
-            A Web Developer & Tech Enthusiast
+            A Software Developer & Tech Enthusiast
         </h2>
         <a
             href="/favicon.png"
