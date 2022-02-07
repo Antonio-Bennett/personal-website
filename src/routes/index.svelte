@@ -1,28 +1,36 @@
+<script context="module" lang="ts">
+    import type { LoadOutput, LoadInput } from '@sveltejs/kit';
+
+    export const load = async ({ fetch }: LoadInput): Promise<LoadOutput> => {
+        const res = await fetch('/projects', {
+            headers: {
+                Accept: 'application/json',
+            },
+        });
+
+        const { projects } = await res.json();
+
+        if (res.ok) {
+            return {
+                props: {
+                    projects,
+                },
+            };
+        }
+    };
+</script>
+
 <script lang="ts">
     // import GraphicDark from '$lib/components/graphic_dark.svelte';
     import GraphicLight from '$lib/components/graphic_light.svelte';
     import ProjectList from '$lib/components/project_list.svelte';
 
-    let projects = [
-        {
-            id: 1,
-            title: 'Portfolio',
-            category: 'Web Application',
-            img: 'https://picsum.photos/1080?random=1',
-        },
-        {
-            id: 2,
-            title: 'Static Site Generator',
-            category: 'Cli Application',
-            img: 'https://picsum.photos/1080?random=2',
-        },
-        {
-            id: 3,
-            title: 'Tic Tac Toe',
-            category: 'Cli Application',
-            img: 'https://picsum.photos/1080?random=3',
-        },
-    ];
+    export let projects: {
+        id: number;
+        title: string;
+        category: string;
+        img: string;
+    }[];
 </script>
 
 <div class="grid md:grid-cols-3">
@@ -66,7 +74,7 @@
             <ProjectList {projects} />
         </div>
         <a
-            href="_"
+            href="/projects"
             class="text-white text-xl font-semibold font-sans rounded-lg bg-[#6366f1] mt-14 mb-16 py-3 px-6 shadow-md shadow-slate-300"
             ><button>More Projects</button></a>
     </section>

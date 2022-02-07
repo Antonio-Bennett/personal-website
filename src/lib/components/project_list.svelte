@@ -12,7 +12,7 @@
                 class="w-full h-auto object-contain" />
         </span>
         <div class="flex flex-col items-center gap-2 p-4">
-            <p class="text-xl font-semibold font-serif text-mainDark">
+            <p class="text-xl font-semibold font-sans text-mainDark">
                 {project.title}
             </p>
             <p class="text-[#1e3851] font-medium">

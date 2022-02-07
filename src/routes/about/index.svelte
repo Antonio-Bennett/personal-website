@@ -3,7 +3,7 @@
     <span class="h-4/5 w-full overflow-hidden rounded-2xl">
         <img class="object-contain rounded-2xl" src="/photo.jpeg" alt="" />
     </span>
-    <div class="h-4/5 md:col-span-2 flex items-center">
+    <div class="h-4/5 flex items-center md:col-span-2">
         <p>
             I am a Software Developer interested in everything from the Web to
             Cli applications. I love to try new technologies such as this
@@ -41,7 +41,7 @@
         <div>
             <label class="font-semibold" for="react">ReactJs</label>
             <div id="react" class="w-full bg-gray-200 h-1">
-                <div class="bg-blue-600 h-1 w-3/5" />
+                <div class="bg-teal-300 h-1 w-3/5" />
             </div>
         </div>
         <div>
