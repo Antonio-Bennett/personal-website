@@ -35,18 +35,18 @@
 
 <div class="grid md:grid-cols-3">
     <section
-        class="flex flex-col items-center justify-center gap-2 md:items-start my-3">
-        <h1 class="text-3xl font-semibold font-sans text-mainDark mt-6">
+        class="my-3 flex flex-col items-center justify-center gap-2 md:items-start">
+        <h1 class="mt-6 font-sans text-3xl font-semibold text-mainDark">
             HEY! I'M ANTONIO
         </h1>
         <h2
-            class="text-lg font-normal font-sans text-gray-400 md:text-2xl md:font-medium">
+            class="font-sans text-lg font-normal text-gray-400 md:text-2xl md:font-medium">
             A Software Developer & Tech Enthusiast
         </h2>
         <a
             href="/favicon.png"
             download
-            class="bg-[#eef2ff] border border-slate-300 shadow-lg shadow[#eef2ff] p-4 rounded-lg flex gap-2 items-center my-10 font-semibold text-gray-600">
+            class="shadow[#eef2ff] my-10 flex items-center gap-2 rounded-lg border border-slate-300 bg-[#eef2ff] p-4 font-semibold text-gray-600 shadow-lg">
             <span>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -65,17 +65,17 @@
     <span class="col-span-2">
         <GraphicLight />
     </span>
-    <section class="flex flex-col items-center my-8 md:col-span-3">
-        <h2 class="text-3xl font-semibold font-sans mb-10 text-mainDark">
+    <section class="my-8 flex flex-col items-center md:col-span-3">
+        <h2 class="mb-10 font-sans text-3xl font-semibold text-mainDark">
             Projects
         </h2>
         <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-10">
+            class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             <ProjectList {projects} />
         </div>
         <a
             href="/projects"
-            class="text-white text-xl font-semibold font-sans rounded-lg bg-[#6366f1] mt-14 mb-16 py-3 px-6 shadow-md shadow-slate-300"
+            class="mt-14 mb-16 rounded-lg bg-[#6366f1] py-3 px-6 font-sans text-xl font-semibold text-white shadow-md shadow-slate-300"
             ><button>More Projects</button></a>
     </section>
 </div>
