@@ -1,0 +1,36 @@
+[
+    {
+        "id": 1,
+        "title": "Portfolio Website",
+        "category": "Web Application",
+        "imgs": [
+            "/p1/project1.png",
+            "/p1/screenshot_iphone.png",
+            "/p1/svelte.png"
+        ],
+        "objective": "Create a web portfolio that displays my practical skills in a clean and concise manner. All important information such as ways to contact me and my resume should be easily accessible and also a way for anyone to quickly get to know a bit about me.",
+        "c_o": "The first challenge was coming up with a design for this portfolio. I can sometimes be a bit indecsive so it took a long time to decide how it should look and feel. Thankfully as web devs there's a lot of inspiration online. Another challenge is making this website fully accessible. It is a goal of mine to get this portfolio to be 100% accessible whether that is adhering to Aria or respecting user settings such as reduced motion.",
+        "github": "https://github.com/Antonio-Bennett/personal-website",
+        "tech": ["html", "css", "js", "ts", "svelte", "tw"]
+    },
+    {
+        "id": 2,
+        "title": "Static Site Generator",
+        "category": "Cli Application",
+        "imgs": ["/p2/project2.png", "/p2/GS-html.png", "/p2/cli.png"],
+        "objective": "Create a static site generator which is used via a cli in Rust.",
+        "c_o": "Although I am fairly familiar with Rust it was a challenge designing how the cli application should work since I haven't created them before. It was also a challenge because due to this project starting via my Open Source Devlopment class I had to adapt to reviewing and merging PR's from strangers. It is different from working with people you are familiar with but I enjoyed it and it has strengthened my love for Open Source. A goal I have is to go back and rewrite this project with the knowledge I have now and properly design a well thought out ssg",
+        "github": "https://github.com/Antonio-Bennett/rssg",
+        "tech": ["rust"]
+    },
+    {
+        "id": 3,
+        "title": "iProper",
+        "category": "Mobile Application",
+        "imgs": ["/p3/project3.png", "/p3/messaging.png", "/p3/qr.png"],
+        "objective": "Create a mobile application where landlords and tenants can easily access functions such as messaging, rental payments and also task assignments.",
+        "c_o": "This was a challenge because it was my first time building a mobile application. Not a PWA or mobile responsive website but a native app. This project was done in a group of 4 and as a result we chose a relatively familiar tool in react native since everyone has worked with react before. On the back-end which I was the lead for, we used MongoDB for storing app data such as user accounts, querying that data via GraphQl and also Firebase to store files. SocketIO was used to enable messaging between users of the same property and Stripe was used for paying rent. Authentication was done via JWT tokens. This was all hosted as an express API via Heroku. This project was really fun because it took us through the steps of designing an application to making it a reality even with constraints such as other classes and limited time. There was a lot that i learnt from this project and I look forward to applying those lessons in future projects.",
+        "github": "https://github.com/iProper/iProper",
+        "tech": ["rn", "ejs", "gql", "fbase", "sio", "mdb", "roku", "stripe"]
+    }
+]

@@ -1,23 +1,27 @@
 <script lang="ts">
-    export let projects = [];
+    import type { ProjectType } from '$lib/utils/types';
+
+    export let projects: [ProjectType];
 </script>
 
 {#each projects as project (project.id)}
-    <div
-        class="col-span-1 border border-gray-100 overflow-hidden rounded-2xl shadow-md shadow-gray-300">
-        <span>
-            <img
-                src={project.img}
-                alt=""
-                class="w-full h-auto object-contain" />
-        </span>
-        <div class="flex flex-col items-center gap-2 p-4">
-            <p class="text-xl font-semibold font-sans text-mainDark">
-                {project.title}
-            </p>
-            <p class="text-[#1e3851] font-medium">
-                {project.category}
-            </p>
+    <a href="/projects/{project.id}">
+        <div
+            class="overflow-hidden col-span-1 rounded-2xl border border-gray-100 shadow-md transition hover:shadow-lg hover:scale-105 shadow-gray-300 hover:shadow-gray-400">
+            <span>
+                <img
+                    src={project.imgs[0]}
+                    alt=""
+                    class="object-cover w-full h-full bg-left aspect-square" />
+            </span>
+            <div class="flex flex-col gap-2 items-center p-4">
+                <p class="font-sans text-xl font-semibold text-mainDark">
+                    {project.title}
+                </p>
+                <p class="text-[#1e3851] font-medium">
+                    {project.category}
+                </p>
+            </div>
         </div>
-    </div>
+    </a>
 {/each}

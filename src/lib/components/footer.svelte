@@ -1,18 +1,9 @@
-<script lang="ts">
-    const copyToClipboard = () => {
-        navigator.clipboard.writeText('The_Antonio#8891').then(
-            () => alert('Discord ID copied to clipboard'),
-            () => alert('Could not copy to clipboard')
-        );
-    };
-</script>
-
 <footer
-    class="grid grid-flow-row gap-5 justify-center border-t-2 border-t-gray-100 pt-20">
-    <span class="font-bold font-sans text-3xl mx-auto text-mainDark"
+    class="grid grid-flow-row gap-5 justify-center pt-20 border-t-2 border-t-gray-100">
+    <span class="mx-auto font-sans text-3xl font-bold text-mainDark"
         ><h1>Follow Me</h1></span>
     <div class="flex justify-around">
-        <div class="bg-gray-100 rounded-lg p-3">
+        <div class="p-3 bg-gray-100 rounded-lg">
             <a href="https://github.com/Antonio-Bennett" target="blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -37,7 +28,7 @@
                     ></svg>
             </a>
         </div>
-        <div class="bg-gray-100 rounded-lg p-3">
+        <div class="p-3 bg-gray-100 rounded-lg">
             <a href="https://twitter.com/Th3_Antonio" target="blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -54,8 +45,10 @@
                         fill="currentColor" /></svg>
             </a>
         </div>
-        <div class="bg-gray-100 rounded-lg p-3">
-            <button on:click={copyToClipboard}>
+        <div class="p-3 bg-gray-100 rounded-lg">
+            <a
+                href="https://www.linkedin.com/in/antonio-bennett-22045a195?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcSarG2%2FqSpeHzW9GMm3nCQ%3D%3D"
+                target="blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -67,11 +60,11 @@
                     preserveAspectRatio="xMidYMid meet"
                     viewBox="0 0 256 256"
                     ><path
-                        d="M108 144a12 12 0 1 1-12-12a12 12 0 0 1 12 12zm52-12a12 12 0 1 0 12 12a12 12 0 0 0-12-12zm82.4 54.5c-16.6 14.4-38.9 25.4-64.4 31.6a17.4 17.4 0 0 1-3.9.5a15.8 15.8 0 0 1-14.2-8.9l-9.5-19a193.6 193.6 0 0 1-44.8 0l-9.5 19a15.8 15.8 0 0 1-14.2 8.9a17.4 17.4 0 0 1-3.9-.5c-25.5-6.2-47.8-17.2-64.4-31.6a16 16 0 0 1-4.9-16.7l34-113.2a15.6 15.6 0 0 1 9.2-10.2a172 172 0 0 1 31-9.6a15.9 15.9 0 0 1 18.6 10.5l6 17.8a191.6 191.6 0 0 1 41 0l6-17.8a15.9 15.9 0 0 1 18.6-10.5a172 172 0 0 1 31 9.6a15.6 15.6 0 0 1 9.2 10.2l34 113.2a16 16 0 0 1-4.9 16.7zm-10.5-12L198 61.2a160.8 160.8 0 0 0-28.3-8.8l-5.1 15a163.4 163.4 0 0 1 19.5 5a8 8 0 0 1-5 15.2c-15.3-5-33-7.6-51.1-7.6s-35.8 2.6-51.1 7.6a7.3 7.3 0 0 1-2.5.4a8 8 0 0 1-2.5-15.6a163.4 163.4 0 0 1 19.5-5l-5-15A167.7 167.7 0 0 0 58 61.1L24 174.4c14.7 12.8 34.7 22.5 57.8 28.2l7.2-14.5a152.9 152.9 0 0 1-17.1-4.5a8 8 0 1 1 5-15.2c15.3 5 33 7.6 51.1 7.6s35.8-2.6 51.1-7.6a8 8 0 0 1 5 15.2a152.9 152.9 0 0 1-17.1 4.5l7.2 14.5c23.1-5.7 43.1-15.4 57.7-28.1z"
-                        fill="currentColor" /></svg>
-            </button>
+                        fill="currentColor"
+                        d="M100 80a12 12 0 1 1-12-12a12 12 0 0 1 12 12Zm128-36v168a16 16 0 0 1-16 16H44a16 16 0 0 1-16-16V44a16 16 0 0 1 16-16h168a16 16 0 0 1 16 16Zm-16 168V44H44v168ZM88 104a8 8 0 0 0-8 8v64a8 8 0 0 0 16 0v-64a8 8 0 0 0-8-8Zm60 0a36 36 0 0 0-20.2 6.2A8 8 0 0 0 112 112v64a8 8 0 0 0 16 0v-36a20 20 0 0 1 40 0v36a8 8 0 0 0 16 0v-36a36 36 0 0 0-36-36Z" /></svg>
+            </a>
         </div>
-        <div class="bg-gray-100 rounded-lg p-3">
+        <div class="p-3 bg-gray-100 rounded-lg">
             <a
                 href="https://www.instagram.com/the_a.n.t.o.n.i.o/"
                 target="blank">
@@ -91,7 +84,7 @@
             </a>
         </div>
     </div>
-    <p class="flex font-sans text-lg items-center gap-1 justify-around mt-8">
+    <p class="flex gap-1 justify-around items-center mt-8 font-sans text-lg">
         <span
             ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +102,7 @@
             ></span>
         2022. Developed by Antonio Bennett
     </p>
-    <p class="flex font-sans text-lg items-center gap-1 mx-auto">
+    <p class="flex gap-1 items-center mx-auto font-sans text-lg">
         Made with ❤️ using <a href="https://svelte.dev" target="blank"
             ><span
                 ><svg

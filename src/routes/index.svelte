@@ -24,19 +24,15 @@
     // import GraphicDark from '$lib/components/graphic_dark.svelte';
     import GraphicLight from '$lib/components/graphic_light.svelte';
     import ProjectList from '$lib/components/project_list.svelte';
+    import type { ProjectType } from '$lib/utils/types';
 
-    export let projects: {
-        id: number;
-        title: string;
-        category: string;
-        img: string;
-    }[];
+    export let projects: [ProjectType];
 </script>
 
 <div class="grid md:grid-cols-3">
     <section
-        class="my-3 flex flex-col items-center justify-center gap-2 md:items-start">
-        <h1 class="mt-6 font-sans text-3xl font-semibold text-mainDark">
+        class="flex flex-col gap-2 justify-center items-center my-3 md:items-start">
+        <h1 class="mt-6 font-sans text-3xl font-bold text-mainDark">
             HEY! I'M ANTONIO
         </h1>
         <h2
@@ -50,7 +46,7 @@
             <span>
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
+                    class="w-5 h-5"
                     viewBox="0 0 20 20"
                     fill="currentColor">
                     <path
@@ -65,12 +61,13 @@
     <span class="col-span-2">
         <GraphicLight />
     </span>
-    <section class="my-8 flex flex-col items-center md:col-span-3">
-        <h2 class="mb-10 font-sans text-3xl font-semibold text-mainDark">
-            Projects
+    <section class="flex flex-col items-center mt-20 mb-8 md:col-span-3">
+        <h2
+            class="mb-10 font-sans text-3xl font-bold md:text-5xl text-mainDark">
+            Selected Projects
         </h2>
         <div
-            class="grid w-full grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+            class="grid grid-cols-1 gap-10 w-full md:grid-cols-2 lg:grid-cols-3">
             <ProjectList {projects} />
         </div>
         <a
