@@ -1,20 +1,13 @@
 <script lang="ts">
-    import { createEventDispatcher } from 'svelte';
+    import { menu_modal } from '$lib/stores/menu_store';
 
     export let styles: string;
-    let open = false;
 
-    $: d = open ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16';
-
-    const dispatch = createEventDispatcher();
-    const toggle = () => {
-        open = !open;
-        dispatch('toggle');
-    };
+    $: d = $menu_modal ? 'M4 6h16M4 12h16M4 18h16' : 'M6 18L18 6M6 6l12 12';
 </script>
 
 <svg
-    on:click={toggle}
+    on:click={menu_modal.toggle}
     xmlns="http://www.w3.org/2000/svg"
     class={styles}
     fill="none"
