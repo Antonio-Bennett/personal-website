@@ -4,6 +4,7 @@
     import Logo from './logo.svelte';
     import Menu from './menu.svelte';
     import MenuIcon from './menu_icon.svelte';
+    import ContactModal from './contact_modal.svelte';
 </script>
 
 <svelte:head>
@@ -13,7 +14,7 @@
 <header>
     <nav
         class="flex justify-between items-center px-8 my-4 md:flex-row md:px-24">
-        <div on:click={() => ($menu_modal ? '' : menu_modal.toggle())}>
+        <div on:click={() => ($menu_modal ? menu_modal.toggle() : '')}>
             <a href="/"><Logo styles="h-auto w-16" /></a>
         </div>
         <div class="md:hidden">
@@ -29,4 +30,5 @@
             >Contact</button>
     </nav>
     <Menu />
+    <ContactModal />
 </header>

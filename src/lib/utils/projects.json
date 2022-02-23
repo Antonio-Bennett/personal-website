@@ -19,7 +19,7 @@
         "category": "Cli Application",
         "imgs": ["/p2/project2.png", "/p2/GS-html.png", "/p2/cli.png"],
         "objective": "Create a static site generator which is used via a cli in Rust.",
-        "c_o": "Although I am fairly familiar with Rust it was a challenge designing how the cli application should work since I haven't created them before. It was also a challenge because due to this project starting via my Open Source Devlopment class I had to adapt to reviewing and merging PR's from strangers. It is different from working with people you are familiar with but I enjoyed it and it has strengthened my love for Open Source. A goal I have is to go back and rewrite this project with the knowledge I have now and properly design a well thought out ssg",
+        "c_o": "Although I am fairly familiar with Rust it was a challenge designing how the cli application should work since I haven't created them before. It was also a challenge because due to this project starting via my Open Source Devlopment class I had to adapt to reviewing and merging PR's from strangers. It is different from working with people you are familiar with but I enjoyed it and it has strengthened my love for Open Source. A goal I have is to go back and rewrite this project with the knowledge I have now and properly design a well thought out static site generator.",
         "github": "https://github.com/Antonio-Bennett/rssg",
         "tech": ["rust"]
     },

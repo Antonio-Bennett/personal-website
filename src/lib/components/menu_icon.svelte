@@ -3,7 +3,7 @@
 
     export let styles: string;
 
-    $: d = $menu_modal ? 'M4 6h16M4 12h16M4 18h16' : 'M6 18L18 6M6 6l12 12';
+    $: d = $menu_modal ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16';
 </script>
 
 <svg

@@ -4,7 +4,7 @@
 
 <nav
     class="absolute px-8 w-full font-sans text-xl bg-white shadow-lg text-mainDark shadow-gray-200"
-    class:hidden={$menu_modal}>
+    class:hidden={!$menu_modal}>
     <ul class="flex flex-col gap-3 items-start">
         <li on:click={menu_modal.toggle} class="pb-2 w-full border-b-2">
             <a href="/projects">Projects</a>
