@@ -1,5 +1,6 @@
 <script lang="ts">
     import { menu_modal } from '$lib/stores/menu_store';
+    import { contact_modal } from '$lib/stores/contact_store';
 </script>
 
 <nav
@@ -16,7 +17,7 @@
             <a href="/blog">Blog</a>
         </li>
         <button
-            on:click={menu_modal.toggle}
+            on:click={menu_modal.toggle && contact_modal.toggle}
             class="text-white text-lg font-semibold font-sans rounded-lg bg-[#6366f1] px-6 py-2 mb-4 shadow-md shadow-slate-300"
             >Contact</button>
     </ul>

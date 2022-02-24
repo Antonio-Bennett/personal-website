@@ -5,6 +5,7 @@
     import Menu from './menu.svelte';
     import MenuIcon from './menu_icon.svelte';
     import ContactModal from './contact_modal.svelte';
+    import { contact_modal } from '$lib/stores/contact_store';
 </script>
 
 <svelte:head>
@@ -26,6 +27,10 @@
             <li><a href="/blog">Blog</a></li>
         </ul>
         <button
+            on:click={() => {
+                $menu_modal ? menu_modal.toggle() : '';
+                contact_modal.toggle();
+            }}
             class="hidden md:inline-block text-white text-lg font-semibold font-sans rounded-lg bg-[#6366f1] px-6 py-2 shadow-md shadow-slate-300"
             >Contact</button>
     </nav>
