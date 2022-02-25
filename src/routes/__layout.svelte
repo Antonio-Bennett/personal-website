@@ -4,8 +4,10 @@
     import Footer from '$lib/components/footer.svelte';
 </script>
 
-<Header />
-<main class="px-8 md:px-24">
-    <slot />
-</main>
-<Footer />
+<div class="dark:bg-[#0d2438]">
+    <Header />
+    <main class="px-8 md:px-24">
+        <slot />
+    </main>
+    <Footer />
+</div>

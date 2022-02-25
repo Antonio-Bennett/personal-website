@@ -1,7 +1,6 @@
 <script context="module" lang="ts">
-    import type { LoadOutput, LoadInput } from '@sveltejs/kit';
-
-    export const load = async ({ fetch }: LoadInput): Promise<LoadOutput> => {
+    import type { Load } from '@sveltejs/kit';
+    export const load: Load = async ({ fetch }) => {
         const res = await fetch('/projects', {
             headers: {
                 Accept: 'application/json',
@@ -21,8 +20,7 @@
 </script>
 
 <script lang="ts">
-    // import GraphicDark from '$lib/components/graphic_dark.svelte';
-    import GraphicLight from '$lib/components/graphic_light.svelte';
+    import Graphic from '$lib/components/graphic.svelte';
     import ProjectList from '$lib/components/project_list.svelte';
     import type { ProjectType } from '$lib/utils/types';
 
@@ -32,7 +30,8 @@
 <div class="grid md:grid-cols-3">
     <section
         class="flex flex-col gap-2 justify-center items-center my-3 md:items-start">
-        <h1 class="mt-6 font-sans text-3xl font-bold text-mainDark">
+        <h1
+            class="mt-6 font-sans text-3xl font-bold dark:text-white text-mainDark">
             HEY! I'M ANTONIO
         </h1>
         <h2
@@ -59,11 +58,11 @@
         </a>
     </section>
     <span class="col-span-2">
-        <GraphicLight />
+        <Graphic />
     </span>
     <section class="flex flex-col items-center mt-20 mb-8 md:col-span-3">
         <h2
-            class="mb-10 font-sans text-3xl font-bold md:text-5xl text-mainDark">
+            class="mb-10 font-sans text-3xl font-bold md:text-5xl dark:text-white text-mainDark">
             Selected Projects
         </h2>
         <div

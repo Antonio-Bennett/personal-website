@@ -14,11 +14,12 @@
                     alt=""
                     class="object-cover w-full h-full bg-left aspect-square" />
             </span>
-            <div class="flex flex-col gap-2 items-center p-4">
-                <p class="font-sans text-xl font-semibold text-mainDark">
+            <div class="flex flex-col gap-2 items-center p-4 dark:bg-mainDark">
+                <p
+                    class="font-sans text-xl font-semibold dark:text-white text-mainDark">
                     {project.title}
                 </p>
-                <p class="text-[#1e3851] font-medium">
+                <p class="font-medium dark:text-white text-mainDark">
                     {project.category}
                 </p>
             </div>
