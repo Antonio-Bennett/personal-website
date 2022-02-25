@@ -1,16 +1,17 @@
 <footer
-    class="grid grid-flow-row gap-5 justify-center pt-20 border-t-2 border-t-gray-100">
-    <span class="mx-auto font-sans text-3xl font-bold text-mainDark"
+    class="grid grid-flow-row gap-5 justify-center py-10 pt-20 mx-8 border-t-2 md:mx-24 border-t-gray-100 dark:border-t-gray-500">
+    <span
+        class="mx-auto font-sans text-3xl font-bold dark:text-gray-200 text-mainDark"
         ><h1>Follow Me</h1></span>
     <div class="flex justify-around">
-        <div class="p-3 bg-gray-100 rounded-lg">
+        <div class="p-3 bg-gray-100 rounded-lg dark:bg-mainDark">
             <a href="https://github.com/Antonio-Bennett" target="blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     aria-hidden="true"
                     role="img"
-                    class="iconify iconify--iconoir"
+                    class="dark:text-gray-400 iconify iconify--iconoir"
                     width="32"
                     height="32"
                     preserveAspectRatio="xMidYMid meet"
@@ -28,14 +29,14 @@
                     ></svg>
             </a>
         </div>
-        <div class="p-3 bg-gray-100 rounded-lg">
+        <div class="p-3 bg-gray-100 rounded-lg dark:bg-mainDark">
             <a href="https://twitter.com/Th3_Antonio" target="blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     aria-hidden="true"
                     role="img"
-                    class="iconify iconify--ph"
+                    class="dark:text-gray-400 iconify iconify--ph"
                     width="32"
                     height="32"
                     preserveAspectRatio="xMidYMid meet"
@@ -45,7 +46,7 @@
                         fill="currentColor" /></svg>
             </a>
         </div>
-        <div class="p-3 bg-gray-100 rounded-lg">
+        <div class="p-3 bg-gray-100 rounded-lg dark:bg-mainDark">
             <a
                 href="https://www.linkedin.com/in/antonio-bennett-22045a195?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcSarG2%2FqSpeHzW9GMm3nCQ%3D%3D"
                 target="blank">
@@ -54,7 +55,7 @@
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     aria-hidden="true"
                     role="img"
-                    class="iconify iconify--ph"
+                    class="dark:text-gray-400 iconify iconify--ph"
                     width="32"
                     height="32"
                     preserveAspectRatio="xMidYMid meet"
@@ -64,7 +65,7 @@
                         d="M100 80a12 12 0 1 1-12-12a12 12 0 0 1 12 12Zm128-36v168a16 16 0 0 1-16 16H44a16 16 0 0 1-16-16V44a16 16 0 0 1 16-16h168a16 16 0 0 1 16 16Zm-16 168V44H44v168ZM88 104a8 8 0 0 0-8 8v64a8 8 0 0 0 16 0v-64a8 8 0 0 0-8-8Zm60 0a36 36 0 0 0-20.2 6.2A8 8 0 0 0 112 112v64a8 8 0 0 0 16 0v-36a20 20 0 0 1 40 0v36a8 8 0 0 0 16 0v-36a36 36 0 0 0-36-36Z" /></svg>
             </a>
         </div>
-        <div class="p-3 bg-gray-100 rounded-lg">
+        <div class="p-3 bg-gray-100 rounded-lg dark:bg-mainDark">
             <a
                 href="https://www.instagram.com/the_a.n.t.o.n.i.o/"
                 target="blank">
@@ -73,7 +74,7 @@
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                     aria-hidden="true"
                     role="img"
-                    class="iconify iconify--ph"
+                    class="dark:text-gray-400 iconify iconify--ph"
                     width="32"
                     height="32"
                     preserveAspectRatio="xMidYMid meet"
@@ -84,7 +85,8 @@
             </a>
         </div>
     </div>
-    <p class="flex gap-1 justify-around items-center mt-8 font-sans text-lg">
+    <p
+        class="flex gap-1 justify-around items-center mt-8 font-sans text-lg dark:text-gray-200">
         <span
             ><svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +104,8 @@
             ></span>
         2022. Developed by Antonio Bennett
     </p>
-    <p class="flex gap-1 items-center mx-auto font-sans text-lg">
+    <p
+        class="flex gap-1 items-center mx-auto font-sans text-lg dark:text-gray-200">
         Made with ❤️ using <a href="https://svelte.dev" target="blank"
             ><span
                 ><svg

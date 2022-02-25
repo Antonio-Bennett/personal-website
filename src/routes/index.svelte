@@ -71,7 +71,7 @@
         </div>
         <a
             href="/projects"
-            class="mt-14 mb-16 rounded-lg bg-[#6366f1] py-3 px-6 font-sans text-xl font-semibold text-white shadow-md shadow-slate-300"
+            class="mt-14 mb-16 rounded-lg bg-[#6366f1] py-3 px-6 font-sans text-xl font-semibold text-white shadow-md shadow-slate-300 dark:shadow-[#4e50be]"
             ><button>More Projects</button></a>
     </section>
 </div>

@@ -3,7 +3,7 @@
     <span class="overflow-hidden w-full h-4/5 rounded-2xl">
         <img class="object-contain rounded-2xl" src="/photo.jpeg" alt="" />
     </span>
-    <div class="flex items-center h-4/5 md:col-span-2">
+    <div class="flex items-center h-4/5 md:col-span-2 dark:text-gray-300">
         <p>
             I am a Software Developer interested in everything from the Web to
             Cli applications. I love to try new technologies such as this
@@ -19,41 +19,43 @@
         </p>
     </div>
     <div class="flex flex-col gap-4 md:col-span-3">
-        <h2 class="my-3 mx-auto font-sans text-4xl font-semibold text-mainDark">
+        <h2
+            class="my-3 mx-auto font-sans text-4xl font-semibold dark:text-gray-200 text-mainDark">
             Skills
         </h2>
         <div>
-            <label class="font-semibold" for="front_end">Front End</label>
+            <label class="font-semibold dark:text-gray-200" for="front_end"
+                >Front End</label>
             <div id="front_end" class="w-full h-1 bg-gray-200">
                 <div class="w-4/5 h-1 bg-yellow-300" />
             </div>
         </div>
         <div>
-            <label class="font-semibold" for="back_end">Back End</label>
+            <label class="font-semibold dark:text-gray-200" for="back_end">Back End</label>
             <div id="back_end" class="w-full h-1 bg-gray-200">
                 <div class="w-3/4 h-1 bg-purple-600" />
             </div>
         </div>
         <div>
-            <label class="font-semibold" for="svelte">Svelte</label>
+            <label class="font-semibold dark:text-gray-200" for="svelte">Svelte</label>
             <div id="svelte" class="w-full h-1 bg-gray-200">
                 <div class="bg-orange-500 h-1 w-[90%]" />
             </div>
         </div>
         <div>
-            <label class="font-semibold" for="react">ReactJs</label>
+            <label class="font-semibold dark:text-gray-200" for="react">ReactJs</label>
             <div id="react" class="w-full h-1 bg-gray-200">
                 <div class="w-3/5 h-1 bg-teal-300" />
             </div>
         </div>
         <div>
-            <label class="font-semibold" for="node">NodeJs</label>
+            <label class="font-semibold dark:text-gray-200" for="node">NodeJs</label>
             <div id="node" class="w-full h-1 bg-gray-200">
                 <div class="w-3/4 h-1 bg-green-600" />
             </div>
         </div>
         <div>
-            <label class="font-semibold" for="rust">Rust</label>
+            <label class="font-semibold dark:text-gray-200" for="rust">Rust</label>
             <div id="rust" class="w-full h-1 bg-gray-200">
                 <div class="w-4/5 h-1 bg-amber-800" />
             </div>
