@@ -21,7 +21,7 @@
 
 <script lang="ts">
     import Graphic from '$lib/components/graphic.svelte';
-    import ProjectList from '$lib/components/project_list.svelte';
+    import ProjectCard from '$lib/components/project_card.svelte';
     import type { ProjectType } from '$lib/utils/types';
 
     export let projects: [ProjectType];
@@ -67,7 +67,9 @@
         </h2>
         <div
             class="grid grid-cols-1 gap-10 w-full md:grid-cols-2 lg:grid-cols-3">
-            <ProjectList {projects} />
+            {#each projects as project (project.id)}
+                <ProjectCard {project} />
+            {/each}
         </div>
         <a
             href="/projects"

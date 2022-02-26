@@ -1,7 +1,7 @@
-<script>
-    import ProjectList from '$lib/components/project_list.svelte';
-
-    export let projects;
+<script lang="ts">
+    import ProjectCard from '$lib/components/project_card.svelte';
+    import type { ProjectType } from '$lib/utils/types';
+    export let projects: [ProjectType];
 </script>
 
 <div class="flex flex-col items-center mt-16 mb-24">
@@ -11,6 +11,8 @@
     </h1>
     <div
         class="grid grid-cols-1 gap-10 mt-8 w-full md:grid-cols-2 lg:grid-cols-3">
-        <ProjectList {projects} />
+        {#each projects as project (project.id)}
+            <ProjectCard {project} />
+        {/each}
     </div>
 </div>
