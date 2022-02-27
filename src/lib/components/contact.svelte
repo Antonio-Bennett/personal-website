@@ -3,7 +3,9 @@
     import { page } from '$app/stores';
 </script>
 
-<div class="absolute max-h-screen px-8 mt-8 w-full md:px-24" class:hidden={!$contact_modal}>
+<div
+    class="absolute px-8 mt-8 w-full max-h-screen md:px-24"
+    class:hidden={!$contact_modal}>
     <div
         class="flex relative flex-col-reverse gap-12 py-8 bg-white rounded-2xl border-2 border-gray-100 shadow-lg md:flex-row md:mx-auto shadow-gray-200 dark:bg-[#0d2438] dark:border-gray-500 dark:shadow-gray-800">
         <form
@@ -11,7 +13,7 @@
             method="POST"
             class="flex flex-col px-4 mx-4 rounded-2xl shadow-lg md:w-1/2 dark:border-gray-500 dark:shadow-md shadow-slate-300 dark:bg-mainDark dark:shadow-gray-600">
             <h1
-                class="mt-4 mb-8 font-sans text-2xl font-medium dark:text-gray-200 text-mainDark">
+                class="mt-5 mb-8 font-sans text-2xl font-medium dark:text-gray-200 text-mainDark">
                 Contact Form
             </h1>
 
