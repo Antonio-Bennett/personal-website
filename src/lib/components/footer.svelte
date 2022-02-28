@@ -5,7 +5,7 @@
         ><h1>Follow Me</h1></span>
     <div class="flex justify-around">
         <div class="p-3 bg-gray-100 rounded-lg dark:bg-mainDark">
-            <a href="https://github.com/Antonio-Bennett" target="blank">
+            <a href="https://github.com/Antonio-Bennett" target="_blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"

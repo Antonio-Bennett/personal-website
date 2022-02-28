@@ -25,7 +25,10 @@
             class="hidden gap-5 font-sans text-xl text-gray-700 md:flex dark:text-gray-200">
             <li><a href="/projects">Projects</a></li>
             <li><a href="/about">About Me</a></li>
-            <li><a href="/blog">Blog</a></li>
+            <li>
+                <a href="https://blog.antoniobennett.dev/" target="_blank"
+                    >Blog</a>
+            </li>
         </ul>
         <button
             on:click={() => {
