@@ -10,7 +10,7 @@
             portfolio which is made using <a
                 class="underline underline-offset-1 decoration-red-600"
                 href="https://svelte.dev"
-                target="blank">Svelte.</a>
+                target="_blank">Svelte.</a>
             I still enjoy well working 'old' technologies as well... considering
             I use Vim specifically Neovim which I absolutely love. I love to solve
             problems and I am comfortable working in teams and by myself with a high
@@ -31,31 +31,36 @@
             </div>
         </div>
         <div>
-            <label class="font-semibold dark:text-gray-200" for="back_end">Back End</label>
+            <label class="font-semibold dark:text-gray-200" for="back_end"
+                >Back End</label>
             <div id="back_end" class="w-full h-1 bg-gray-200">
                 <div class="w-3/4 h-1 bg-purple-600" />
             </div>
         </div>
         <div>
-            <label class="font-semibold dark:text-gray-200" for="svelte">Svelte</label>
+            <label class="font-semibold dark:text-gray-200" for="svelte"
+                >Svelte</label>
             <div id="svelte" class="w-full h-1 bg-gray-200">
                 <div class="bg-orange-500 h-1 w-[90%]" />
             </div>
         </div>
         <div>
-            <label class="font-semibold dark:text-gray-200" for="react">ReactJs</label>
+            <label class="font-semibold dark:text-gray-200" for="react"
+                >ReactJs</label>
             <div id="react" class="w-full h-1 bg-gray-200">
                 <div class="w-3/5 h-1 bg-teal-300" />
             </div>
         </div>
         <div>
-            <label class="font-semibold dark:text-gray-200" for="node">NodeJs</label>
+            <label class="font-semibold dark:text-gray-200" for="node"
+                >NodeJs</label>
             <div id="node" class="w-full h-1 bg-gray-200">
                 <div class="w-3/4 h-1 bg-green-600" />
             </div>
         </div>
         <div>
-            <label class="font-semibold dark:text-gray-200" for="rust">Rust</label>
+            <label class="font-semibold dark:text-gray-200" for="rust"
+                >Rust</label>
             <div id="rust" class="w-full h-1 bg-gray-200">
                 <div class="w-4/5 h-1 bg-amber-800" />
             </div>

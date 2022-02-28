@@ -21,7 +21,7 @@
     </section>
     <section>
         <div class="grid gap-8 md:grid-cols-3">
-            <a href={project.github} target="blank"
+            <a href={project.github} target="_blank"
                 ><button
                     class="w-full h-36 font-sans text-5xl text-white font-bold rounded-2xl transition-colors bg-[#6366f1] hover:bg-slate-200 hover:text-[#6366f1] dark:text-gray-200 dark:hover:bg-gray-200"
                     >Github</button
@@ -34,7 +34,7 @@
                 </h3>
                 <div class="flex overflow-x-auto gap-2">
                     {#each project.tech as tech}
-                        <a href={project_tech[tech].link} target="blank">
+                        <a href={project_tech[tech].link} target="_blank">
                             <img
                                 class="h-12 md:h-16 lg:h-24"
                                 src={project_tech[tech].svg}

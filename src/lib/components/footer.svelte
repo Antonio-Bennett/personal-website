@@ -30,7 +30,7 @@
             </a>
         </div>
         <div class="p-3 bg-gray-100 rounded-lg dark:bg-mainDark">
-            <a href="https://twitter.com/Th3_Antonio" target="blank">
+            <a href="https://twitter.com/Th3_Antonio" target="_blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -49,7 +49,7 @@
         <div class="p-3 bg-gray-100 rounded-lg dark:bg-mainDark">
             <a
                 href="https://www.linkedin.com/in/antonio-bennett-22045a195?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BcSarG2%2FqSpeHzW9GMm3nCQ%3D%3D"
-                target="blank">
+                target="_blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -68,7 +68,7 @@
         <div class="p-3 bg-gray-100 rounded-lg dark:bg-mainDark">
             <a
                 href="https://www.instagram.com/the_a.n.t.o.n.i.o/"
-                target="blank">
+                target="_blank">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -106,7 +106,7 @@
     </p>
     <p
         class="flex gap-1 items-center mx-auto font-sans text-lg dark:text-gray-200">
-        Made with ❤️ using <a href="https://svelte.dev" target="blank"
+        Made with ❤️ using <a href="https://svelte.dev" target="_blank"
             ><span
                 ><svg
                     xmlns="http://www.w3.org/2000/svg"

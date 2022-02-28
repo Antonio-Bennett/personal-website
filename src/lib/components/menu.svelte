@@ -14,7 +14,7 @@
             <a href="/about">About Me</a>
         </li>
         <li on:click={menu_modal.toggle} class="pb-2 w-full border-b-2">
-            <a href="https://blog.antoniobennett.dev/" target="blank">Blog</a>
+            <a href="https://blog.antoniobennett.dev/" target="_blank">Blog</a>
         </li>
         <button
             on:click={() => {
