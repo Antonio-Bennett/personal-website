@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { menu_modal } from '$lib/stores/menu_store';
+    import { menu_modal } from '$lib/stores/menu';
 
     export let styles: string;
 

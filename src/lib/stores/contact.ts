@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 
-const contactToggle = () => {
+const contact_toggle = () => {
     const { subscribe, update } = writable(false);
 
     return {
@@ -9,4 +9,4 @@ const contactToggle = () => {
     };
 };
 
-export const contact_modal = contactToggle();
+export const contact_modal = contact_toggle();

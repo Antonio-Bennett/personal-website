@@ -1,6 +1,6 @@
 import { writable } from 'svelte/store';
 
-const menuToggle = () => {
+const menu_toggle = () => {
     const { subscribe, update } = writable(false);
 
     return {
@@ -9,4 +9,4 @@ const menuToggle = () => {
     };
 };
 
-export const menu_modal = menuToggle();
+export const menu_modal = menu_toggle();

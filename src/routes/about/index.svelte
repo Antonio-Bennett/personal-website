@@ -1,9 +1,15 @@
+<script lang="ts">
+    import { fly } from 'svelte/transition';
+</script>
+
 <section
     class="grid grid-cols-1 gap-8 items-center my-16 font-sans text-xl md:grid-cols-3">
     <span class="overflow-hidden w-full h-4/5 rounded-2xl">
         <img class="object-contain rounded-2xl" src="/photo.jpeg" alt="" />
     </span>
-    <div class="flex items-center h-4/5 md:col-span-2 dark:text-gray-300">
+    <div
+        class="flex items-center h-4/5 md:col-span-2 dark:text-gray-300"
+        transition:fly={{ x: 300, delay: 500, duration: 500 }}>
         <p>
             I am a Software Developer interested in everything from the Web to
             Cli applications. I love to try new technologies such as this

@@ -1,6 +1,7 @@
 <script lang="ts">
     import ProjectCard from '$lib/components/project_card.svelte';
     import type { ProjectType } from '$lib/utils/types';
+    import { fly } from 'svelte/transition';
     export let projects: [ProjectType];
 </script>
 
@@ -12,7 +13,9 @@
     <div
         class="grid grid-cols-1 gap-10 mt-8 w-full md:grid-cols-2 lg:grid-cols-3">
         {#each projects as project (project.id)}
-            <ProjectCard {project} />
+            <div in:fly={{ y: 300, duration: 1500, delay: 500 }}>
+                <ProjectCard {project} />
+            </div>
         {/each}
     </div>
 </div>
