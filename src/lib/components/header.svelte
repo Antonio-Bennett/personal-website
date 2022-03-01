@@ -32,8 +32,7 @@
             <li><a href="/projects">Projects</a></li>
             <li><a href="/about">About Me</a></li>
             <li>
-                <a href="https://blog.antoniobennett.dev/" target="_blank"
-                    >Blog</a>
+                <a href="https://blog.antoniobennett.dev/">Blog</a>
             </li>
         </ul>
         <div class="flex gap-4 items-center">
