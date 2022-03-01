@@ -58,7 +58,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 aria-hidden="true"
                 role="img"
-                class="p-1 bg-gray-100 rounded-lg transition-colors cursor-pointer dark:text-gray-300 hover:text-red-200 iconify iconify--ph dark:bg-mainDark"
+                class="p-1 bg-gray-100 dark:hover:text-[#6366f1] rounded-lg transition-colors cursor-pointer dark:text-gray-300 iconify iconify--ph dark:bg-mainDark"
                 width="32"
                 height="32"
                 preserveAspectRatio="xMidYMid meet"
