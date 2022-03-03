@@ -1,7 +1,8 @@
 <script lang="ts">
-    import { contact_modal } from '$lib/stores/contact';
     import { page } from '$app/stores';
     import { fade } from 'svelte/transition';
+    import { contact_modal } from '$lib/stores/contact';
+    import { click_outside } from '$lib/utils/click_outside';
 </script>
 
 {#if $contact_modal}
@@ -9,6 +10,9 @@
         transition:fade={{ duration: 500 }}
         class="absolute px-8 mt-8 w-full max-h-screen md:px-24">
         <div
+            on:click={() => console.log('test')}
+            use:click_outside
+            on:outclick={contact_modal.toggle}
             class="flex relative flex-col-reverse gap-12 py-8 bg-white rounded-2xl border-2 border-gray-100 shadow-lg md:flex-row md:mx-auto shadow-gray-200 dark:bg-[#0d2438] dark:border-gray-500 dark:shadow-gray-800">
             <form
                 action="https://formsubmit.co/0c1ca7fcabb556c34b0ba09ecf32a7c2"

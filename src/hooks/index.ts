@@ -1,4 +1,4 @@
-import type { GetSession, Handle } from '@sveltejs/kit';
+import type { GetSession, Handle } from "@sveltejs/kit";
 import { get_cookie_value } from '$lib/utils/get_cookie_value';
 import { isTheme } from '$lib/utils/types';
 
