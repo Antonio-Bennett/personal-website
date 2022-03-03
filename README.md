@@ -1,3 +1,11 @@
+This portolio is built using [Svelte](https://svelte.dev)
+
+It is hosted on [Vercel](https://vercel.com) and the blog is powered by [Hashnode](https://hashnode.com)
+
+You can view it live at https://antoniobennett.dev
+
+Follow the instructions below to start building with svelte as well :)
+
 # create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
