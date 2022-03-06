@@ -9,7 +9,7 @@
             "/p1/svelte.png"
         ],
         "objective": "Create a web portfolio that displays my practical skills in a clean and concise manner. All important information such as ways to contact me and my resume should be easily accessible and also a way for anyone to quickly get to know a bit about me.",
-        "c_o": "The first challenge was coming up with a design for this portfolio. I can sometimes be a bit indecsive so it took a long time to decide how it should look and feel. Thankfully as web devs there's a lot of inspiration online. Another challenge is making this website fully accessible. It is a goal of mine to get this portfolio to be 100% accessible whether that is adhering to Aria or respecting user settings such as reduced motion.",
+        "c_o": "The first challenge was coming up with a design for this portfolio. I can sometimes be a bit indecisive so it took a long time to decide how it should look and feel. Thankfully as web devs there's a lot of inspiration online. Another challenge is making this website fully accessible. It is a goal of mine to get this portfolio to be 100% accessible whether that is adhering to Aria or respecting user settings such as reduced motion.",
         "github": "https://github.com/Antonio-Bennett/personal-website",
         "tech": ["html", "css", "js", "ts", "svelte", "tw"]
     },

@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { fade, fly } from 'svelte/transition';
     import project_tech from '$lib/utils/project_tech.json';
     import type { ProjectType } from '$lib/utils/types';
     export let project: ProjectType;
@@ -21,9 +22,12 @@
     </section>
     <section>
         <div class="grid gap-8 md:grid-cols-3">
-            <a href={project.github} target="_blank"
+            <a
+                href={project.github}
+                target="_blank"
+                in:fly={{ duration: 400, x: -200, delay: 600 }}
                 ><button
-                    class="w-full h-36 font-sans text-5xl text-white font-bold rounded-2xl transition-colors bg-[#6366f1] hover:bg-slate-200 hover:text-[#6366f1] dark:text-gray-200 dark:hover:bg-gray-200"
+                    class="w-full h-36 font-sans text-5xl text-white font-bold rounded-2xl transition-colors bg-[#6366f1] hover:bg-slate-200 hover:text-[#6366f1] dark:hover:text-[#6366f1] dark:text-gray-200 dark:hover:bg-gray-200"
                     >Github</button
                 ></a>
 
@@ -33,8 +37,14 @@
                     Tools and Technologies
                 </h3>
                 <div class="flex overflow-x-auto gap-2">
-                    {#each project.tech as tech}
-                        <a href={project_tech[tech].link} target="_blank">
+                    {#each project.tech as tech, idx}
+                        <a
+                            href={project_tech[tech].link}
+                            target="_blank"
+                            in:fade={{
+                                delay: 700 + idx * 200,
+                                duration: 400,
+                            }}>
                             <img
                                 class="h-12 md:h-16 lg:h-24"
                                 src={project_tech[tech].svg}
