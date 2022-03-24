@@ -26,3 +26,9 @@
         <Footer />
     </div>
 </div>
+
+<style>
+:global(html){
+  background-color: #0d2438;
+}
+</style>
