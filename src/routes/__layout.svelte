@@ -10,8 +10,11 @@
     import Footer from '$lib/components/footer.svelte';
     import Scroll from '$lib/components/scroll.svelte';
     import PageTransition from '$lib/components/page_transition.svelte';
+    import { browser } from '$app/env';
 
     export let url: string;
+
+    $: if (browser) document.querySelector('html').className = $theme;
 </script>
 
 <div class={$theme}>
@@ -26,9 +29,3 @@
         <Footer />
     </div>
 </div>
-
-<style>
-:global(html){
-  background-color: #0d2438;
-}
-</style>
